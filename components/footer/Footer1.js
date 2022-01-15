@@ -198,6 +198,50 @@ const Footer1 = ({}) => {
                   </div>
                 </div>
               </div>
+              <div className="sm:hidden sm:mt-0 mt-4">
+                <h2 className="w-60 text-lg md:text-xl font-medium leading-loose text-gray-800 dark:text-white">
+                  Get Updates and more
+                </h2>
+                <div className="dark:bg-gray-800 bg-white rounded-lg mt-6 flex flex justify-start items-start flex-col space-y-2">
+                  <div className="w-full flex justify-between items-center space-x-2 sm:space-x-0">
+                    <div className="relative w-full">
+                      <input
+                        className="bg-transparent focus:outline-none focus:ring-2 w-full focus:ring-gray-400 h-10 p-2 dark:placeholder-gray-300 placeholder-gray-600 text-xs md:text-base"
+                        type="text"
+                        placeholder="Your email address"
+                      />
+                      <button className="absolute right-0 top-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 hover:opacity-75 p-2 sm:p-0 sm:w-12 h-10 flex justify-center items-center bg-gradient-to-l from-indigo-600 to-indigo-700 rounded-sm">
+                        <svg
+                          width={26}
+                          height={26}
+                          viewBox="0 0 26 26"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clipPath="url(#clip0)">
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M24.0845 12.9998C24.0845 13.2879 23.9194 13.5506 23.6599 13.6755L9.34094 20.5698C9.06387 20.7032 8.73344 20.654 8.50731 20.4456C8.28118 20.2372 8.20518 19.9119 8.31557 19.6249L10.8637 12.9998L8.31557 6.37474C8.20518 6.08772 8.28118 5.7624 8.50731 5.554C8.73344 5.3456 9.06387 5.29635 9.34094 5.42976L23.6599 12.324C23.9194 12.449 24.0845 12.7117 24.0845 12.9998ZM12.1823 13.7498L10.3947 18.3977L20.048 13.7498H12.1823ZM20.048 12.2498L10.3947 7.60193L12.1823 12.2498H20.048Z"
+                              fill="white"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect
+                                width={18}
+                                height={18}
+                                fill="white"
+                                transform="translate(12.7279 0.271973) rotate(45)"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </footer>
