@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Feature1 from "../components/feature/feature1";
+import Feature1 from "../components/feature/Feature1";
+import Footer1 from "../components/footer/Footer1";
 import Hero1 from "../components/hero/hero1";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <div>
         <Hero1 />
         <Feature1 />
+        <Footer1 />
       </div>
     </>
   );
