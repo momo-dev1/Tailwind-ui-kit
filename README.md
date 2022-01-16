@@ -1,6 +1,6 @@
 # Tailwind-ui-Kit
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg)
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
 ![Tailwind-Kit](https://www.tailwind-kit.com/home.png)
 
@@ -28,7 +28,7 @@ and much more !!
 
 ## Documentation
 
-The documentation for the Tailwind-kit is hosted at our <a href="https://www.tailwind-kit.com/started" target="_blank">website</a>.
+The documentation for the Tailwind-kit is hosted at our <a href="" target="_blank">website</a>.
 
 ## Browser Support
 
