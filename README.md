@@ -4,8 +4,6 @@
 
 ![Tailwind-Kit](https://www.tailwind-kit.com/home.png)
 
-</a>
-
 ### A beautiful and large components and templates kit for TailwindCSS 3.0
 
 Tailwind-ui-Kit is Free and Open Source. It does not change or add any CSS to the already one from TailwindCSS 3.0. It features multiple HTML elements that can be used in all web projects who's use tailwind CSS.
