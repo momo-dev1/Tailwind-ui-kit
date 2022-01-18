@@ -8,7 +8,7 @@ const FeaturePage = ({}) => {
       title="Features Tailwind components"
       desc="Features more components for tailwind css"
     >
-      <SectionHeader title="" />
+      <SectionHeader title="Features" />
       <ComponentLayout
         title="feature 1"
         vertical={false}
