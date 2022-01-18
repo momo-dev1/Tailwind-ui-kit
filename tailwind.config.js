@@ -5,6 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        blue: {
+          950: "#111827",
+        },
+        gray: {
+          450: "#9CA3AA",
+        },
+      },
       fontFamily: {
         sans: ["DM Sans", "sans-serif"],
       },
