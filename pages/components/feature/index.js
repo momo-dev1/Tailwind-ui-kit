@@ -16,7 +16,7 @@ const FeaturePage = ({}) => {
         element={<Feature1 />}
       />
       <ComponentLayout
-        title="feature 1"
+        title="feature 2"
         vertical={false}
         element={<Feature2 />}
       />
