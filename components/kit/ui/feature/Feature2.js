@@ -1,6 +1,6 @@
 import React from "react";
 
-function Feature2() {
+const Feature2 = () => {
   return (
     <div className="dark:bg-gray-900">
       <section className="container py-20 mx-auto">
@@ -44,6 +44,6 @@ function Feature2() {
       </section>
     </div>
   );
-}
+};
 
 export default Feature2;

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Feature1() {
+const Feature1 = () => {
   return (
     <div className="container flex flex-col-reverse justify-center px-10 pt-6 pb-5 mx-auto lg:flex-row lg:items-center lg:space-x-24 xl:space-x-32">
       <div className="flex flex-col mt-10 lg:w-1/3 lg:items-center sm:mt-14">
@@ -98,6 +98,6 @@ function Feature1() {
       </div>
     </div>
   );
-}
+};
 
 export default Feature1;
