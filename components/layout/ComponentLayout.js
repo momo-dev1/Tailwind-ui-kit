@@ -1,17 +1,16 @@
-import {  useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import EDITOR_THEME from '../../editorTheme';
 import { LiveEditor, LivePreview, LiveProvider } from 'react-live';
+
 
 const ComponentLayout = (props) => {
     //   const code = useCallback(() => {
     //     return formatHtml(ReactDOMServer.renderToStaticMarkup(props.element));
     // }, [props.element]);
 
- 
     const [hasCopied, setHasCopied] = useState(false);
     const previewRef = useRef();
 
-   
     const copyCode = () => {
         const el = document.createElement('textarea');
         el.value = code();
@@ -20,18 +19,16 @@ const ComponentLayout = (props) => {
         document.execCommand('copy');
         document.body.removeChild(el);
         setHasCopied(true);
-       
     };
 
     const COPY_BTN = () => {
         return (
             <button
                 onClick={copyCode}
-                className={`w-28 px-4 py-2 flex items-center text-base font-medium rounded-md ${
-                    hasCopied
-                        ? 'text-white bg-green-500 hover:bg-green-700'
-                        : 'text-gray-800 bg-white hover:bg-gray-200'
-                }`}
+                className={`w-28 px-4 py-2 flex items-center text-base font-medium rounded-md ${ hasCopied
+                    ? 'text-white bg-green-500 hover:bg-green-700'
+                    : 'text-gray-800 bg-white hover:bg-gray-200'
+                    }`}
             >
                 <svg
                     width="20"
@@ -49,9 +46,9 @@ const ComponentLayout = (props) => {
     };
 
     const [status, setStatus] = useState({
-    EDIT_CODE = 'edit',
-    DEFAULT = 'default',
-});
+        EDIT_CODE = 'edit',
+        DEFAULT = 'default',
+    });
     return (
         <>
             <div
@@ -61,8 +58,7 @@ const ComponentLayout = (props) => {
                 <div className="flex flex-col items-center justify-between p-4 bg-white border md:flex-row rounded-xl">
                     <p className="mb-2 text-xl font-light text-gray-600 md:mb-0">{props.title} </p>
                     <div className="flex flex-row flex-wrap items-center justify-center gap-4">
-                       
-  
+
                         <div className="w-32">
                             <button
                                 onClick={() => setStatus(status.EDIT_CODE)}
@@ -93,19 +89,16 @@ const ComponentLayout = (props) => {
                     code={code()}
                 >
                     <div
-                        className={`${
-                            props.vertical ? 'flex-col justify-center' : 'flex-col md:flex-row justify-between '
-                        } flex gap-4 items-start ${props.fullscreen ? '' : 'mx-4 py-12'}`}
+                        className={`${ props.vertical ? 'flex-col justify-center' : 'flex-col md:flex-row justify-between '
+                            } flex gap-4 items-start ${ props.fullscreen ? '' : 'mx-4 py-12' }`}
                     >
-                        <div ref={previewRef} className={`${props.vertical ? 'w-full ' : ''}mx-auto`}>
+                        <div ref={previewRef} className={`${ props.vertical ? 'w-full ' : '' }mx-auto`}>
                             <LivePreview />
                         </div>
-
                         {status !== status.DEFAULT && (
-                            <div className={`${props.vertical ? '' : 'md:w-3/4'} relative w-full`}>
+                            <div className={`${ props.vertical ? '' : 'md:w-3/4' } relative w-full`}>
                                 <div>
                                     <div className="absolute z-10 top-2 right-24">{COPY_BTN()}</div>
-
                                     <button
                                         onClick={() => setStatus(status.DEFAULT)}
                                         className="absolute z-30 w-12 p-2 text-base font-medium bg-red-300 rounded-md top-2 right-2 hover:bg-red-400 "
@@ -128,7 +121,6 @@ const ComponentLayout = (props) => {
                     </div>
                 </LiveProvider>
             </div>
-           
         </>
     );
 };
